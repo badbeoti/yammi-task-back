@@ -3,6 +3,7 @@ from rest_framework import serializers
 from rest_framework.validators import UniqueValidator
 from .models import MyUser
 
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
