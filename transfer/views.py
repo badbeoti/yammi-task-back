@@ -35,7 +35,7 @@ def airdrop(request):
 
 
 @api_view(['POST'])
-def transfer(request):
+def send(request):
     create_serializer = TransferSerializer(data=request.data)
 
     if create_serializer.is_valid():

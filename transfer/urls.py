@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import airdrop, transfer
+from .views import airdrop, send
 
 urlpatterns = [
     path("airdrop/", airdrop),
-    path("transfer/", transfer)
+    path("send/", send)
 ]
